@@ -1,4 +1,4 @@
-# Spotfy web clone
+# Spotify web clone
 
 ![Thumbnail.png](https://i.ibb.co/WVqL0PV/image.png)
 
