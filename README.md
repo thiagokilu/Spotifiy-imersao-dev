@@ -14,7 +14,7 @@ To run the project you need to install node js
 
 [Install](https://nodejs.org/en)
 
-## Creating the Vite Project
+## Fake api
 
 To run the project, you need to use the fake api, just run the code below:
 
