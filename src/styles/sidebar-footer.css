@@ -166,6 +166,10 @@ body{
     border-radius: 20px;
 }
 
+.hidden{
+    display: none;
+}
+
 .footer{
     position: fixed;
     display: flex;
@@ -176,6 +180,15 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.footer #fecha {
+    background: transparent;
+    color: white;
+    padding: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: absolute;
 }
 
 
@@ -195,7 +208,10 @@ body{
     font-weight: bold;
     text-decoration: none;
     text-transform: none;
-    margin-top: 12px;
     border: 0px;
-    padding: 14px 30px;   
+    padding: 14px 30px;
+    right: 0;
+    top: 0;
+    position: relative; 
+    cursor: pointer;
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/vars.css">
     <link rel="stylesheet" href="./src/styles/main-content.css">
+    <link rel="stylesheet" href="./src/styles/player.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
@@ -235,7 +236,7 @@
                             <div class="card-img">
                                 <img id="artist-img" class="artist-img" />
                                 <div class="play">
-                                    <span class="fa fa-solid fa-play"></span>
+                                    <span id="btn-cantor" class="fa fa-solid fa-play"></span>
                                 </div>
                             </div>
                             <div class="card-text">
@@ -251,8 +252,25 @@
             </div>
         </div>
     </main>
+    <div class="player hidden" id="player">
+        <div class="music-info">
+            <p id="player-musica">Nome da musica</p>
+            <p id="player-cantor">Cantor</p>
+        </div>
+        <div class="music-player">
+            <button id="btn-play"><img id="btn-play-img" src="./src/assets/icons/play.png" alt="play"></button>
+            <!-- <button id="pause" onclick="pausarmusica()"><img src="https://i.ibb.co/tbzRF6D/pausa.png" alt="pause"></button> -->
+            <span>3:00</span>
+        </div>
+            <div id="volume-container">
+                <button id="volume-down" onclick="decreaseVolume()">-</button>
+                <div id="volume-level">50</div>
+                <button id="volume-up" onclick="increaseVolume()">+</button>
+            </div>
+    
+    </div>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__text">
             <div class="text__title">
                 <span> Testar o premium de graça</span>
@@ -263,11 +281,12 @@
                     cartão de crédito</footer>
             </div>
         </div>
-        <div class="button">
+        <div class="button" onclick="tocarmusica()">
             <button>
                 Inscreva-se grátis
             </button>
         </div>
+        <button id="fecha" onclick="fechar()">X</button>
     </footer>
     <script type="text/javascript" src="./script.js"></script>
 </body>
