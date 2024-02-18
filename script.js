@@ -14,7 +14,7 @@ const audio = new Audio('https://cdn.pixabay.com/download/audio/2023/09/29/audio
 
 
 function requestApi(searchTerm) {
-    const url = `https://my-json-server.typicode.com/thiagokilu/Spotifiy-imersao-dev/artists=${searchTerm}`
+    const url = `https://my-json-server.typicode.com/thiagokilu/Spotifiy-imersao-dev/artists?name_like=${searchTerm}`
     fetch(url)
         .then((response) => response.json())
         .then((result) => displayResults(result))
