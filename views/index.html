@@ -235,24 +235,43 @@
                         <div class="artist-card" id="">
                             <div class="card-img">
                                 <img id="artist-img" class="artist-img" />
-                                <div class="play">
+                                <div class="play-card">
                                     <span id="btn-cantor" class="fa fa-solid fa-play"></span>
                                 </div>
                             </div>
                             <div class="card-text">
                                 <a title="Foo Fighters" class="vst" href=""></a>
                                 <span class="artist-name" id="artist-name"></span>
-                                <span class="artist-categorie">Artista</span>
+                                <span class="artist-categorie">Categoria</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div id="result-music" class="hidden">
+                    <div class="grid-container">
+                        <div class="music-card" id="">
+                            <div class="card-track-img">
+                                <img id="album-img" class="album-img" src="" alt="Capa do Álbum" />
+                                <div class="play">
+                                    <img src="assets/icons/play.svg" alt="" id="btn-track-play">
+                                </div>
+                            </div>
+                            <div class="card-text">
+                                <a title="Nome da Música" class="song-link" href="" id="music-name">Nome da Música</a>
+                                <span class="artist-name" id="artist-music-name"></span>
+                                <span class="artist-categorie">Categoria</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
             </div>
         </div>
     </main>
-    <div class="player hidden" id="player">
+    <div class="player hidden " id="player">
         <div class="music-info">
             <div>
                 <img src="https://e-cdns-images.dzcdn.net/images/cover/4024b85cf4aca77310960434d07ad4de/56x56-000000-80-0-0.jpg" alt="cover" id="capa-musica">
@@ -269,7 +288,7 @@
                 <button id="btn-next"><img id="btn-next-img" src="assets/icons/next.png" alt="next"></button>
             </div>
             <div>
-                <span>3:00</span>
+                <span id="music-timer">3:00</span>
             </div>
         </div>
             <div id="volume-container">

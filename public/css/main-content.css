@@ -244,7 +244,6 @@
     padding: 16px;
     position: relative;
     transition: background-color 0.3s ease;
-    width: 100%;
   }
 
   .artist-card:hover{
@@ -327,3 +326,121 @@
     padding: 20px 40px;
   }
   /* FIM CARD ARTISTA */
+
+  /* card musica */
+
+  .music{
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 272px;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .grid-container{
+    grid-gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    min-width: 767px;
+  }
+
+  .music-card{
+    background: #181818;
+    border-radius: 8px;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 16px;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+
+  .music-card:hover{
+    background-color: #252525;
+  }
+
+  .card-track-img{
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .album-cover{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .card-text{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 62px;
+  }
+
+  .card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+    color: #fff; /* Adicionando a cor branca para o link */
+    text-decoration: none; /* Removendo o sublinhado */
+  }
+  
+  .music-title {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    padding-block-end: 8px;
+  }
+  
+  .artist-name {
+    color: #fff; /* Adicionando a cor branca para o nome do artista */
+    font-size: 14px; /* Diminuindo o tamanho da fonte */
+    font-weight: 400;
+  }
+  
+  .artist-category {
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+  
+  .play {
+    position: relative;
+  }
+  
+  #btn-track-play {
+    position: absolute;
+    right: 10px;
+    background-color: #1db954;
+    border-radius: 100%;
+    font-size: 14px;
+    opacity: 0;
+    transition: all ease 0.4s;
+    max-width: 40px;
+  }
+  
+  .music-card:hover #btn-track-play {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  
+  #btn-track-play:hover {
+    max-width: 80px;
+    cursor: pointer;
+  }
+
+
+  
+  #result-music {
+    padding: 20px 40px;
+  }
