@@ -20,6 +20,8 @@
     text-align: left;
     display: flex;
     align-items: center;
+    width: 25%;
+    height: 25%;
 }
 .music-info p{
     text-align: left;
@@ -39,8 +41,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 25%;
 }
 
 .music-player img {
@@ -55,11 +56,22 @@
     display: flex;
     flex-direction: row;
 }
-
 .player button {
     text-decoration: none;
     background: transparent;
     border: none;
     outline: none;
     cursor: pointer;
+}
+/* volume */
+#volume-container {
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+#volume-container button{
+    font-size: 30px;
+    color: #fff;
+    
 }

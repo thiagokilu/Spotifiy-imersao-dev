@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 });
 app.get("/api/artist/test", async (req, res) => {
   const response = await fetch(
-    "https://api.deezer.com/search?q=" + req.query.test
+    "https://api.deezer.com/artist/" + req.query.test
   );
 
   const data = await response.json();

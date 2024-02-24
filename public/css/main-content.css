@@ -360,6 +360,9 @@
   .music-card:hover{
     background-color: #252525;
   }
+  .music-card .album-img{
+    max-width: 56px;
+  }
 
   .card-track-img{
     position: relative;
