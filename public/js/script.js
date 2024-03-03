@@ -40,8 +40,8 @@ let novoGridContainer;
 
 let nameSong, previewSong, coverSong, duration;
 
-const encodedSearchTerm = encodeURIComponent(searchTerm);
 async function requestApi(searchTerm) {
+  const encodedSearchTerm = encodeURIComponent(searchTerm);
   const resposta = await fetch(
     "https://spotifiy-imersao-dev.vercel.app//api/artist?test=" + encodedSearchTerm
   );
