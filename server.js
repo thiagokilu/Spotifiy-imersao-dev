@@ -20,12 +20,21 @@ app.set("views", path.join(__dirname, "./views"));
 app.get("/", (req, res) => {
   res.render("index");
 });
-app.get("/api/artist/test", async (req, res) => {
+app.get("/api/artist", async (req, res) => {
   const response = await fetch(
     "https://api.deezer.com/artist/" + req.query.test
   );
 
   const data = await response.json();
+  res.json(data);
+});
+app.get("/api/musics", async (req, res) => {
+  const response = await fetch(
+    `https://api.deezer.com/artist/${req.query.id_music}/top?limit=10`
+  );
+
+  const data = await response.json();
+
   res.json(data);
 });
 
