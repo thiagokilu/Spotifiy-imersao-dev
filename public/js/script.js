@@ -48,11 +48,12 @@ async function requestApi(searchTerm) {
 
   let name = dados["name"];
   let picture = dados["picture_medium"];
+  let artistId = dados["id"]
 
   console.log(dados["id"]);
 
   const respostaMusic = await fetch(
-    "https://spotifiy-imersao-dev.vercel.app//api/musics?id_music=1429841"
+    `https://spotifiy-imersao-dev.vercel.app//api/musics?id_music=${artistId}`
   );
 
   dadosMusic = await respostaMusic.json();
