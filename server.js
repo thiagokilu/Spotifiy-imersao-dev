@@ -8,7 +8,7 @@ const PORT = 3000;
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://spotifiy-imersao-dev.vercel.app",
   })
 );
 app.engine("html", require("ejs").renderFile);

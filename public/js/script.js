@@ -42,7 +42,7 @@ let nameSong, previewSong, coverSong, duration;
 
 async function requestApi(searchTerm) {
   const resposta = await fetch(
-    "http://localhost:3000/api/artist?test=" + searchTerm
+    "https://spotifiy-imersao-dev.vercel.app//api/artist?test=" + searchTerm
   );
   dados = await resposta.json();
 
@@ -52,7 +52,7 @@ async function requestApi(searchTerm) {
   console.log(dados["id"]);
 
   const respostaMusic = await fetch(
-    "http://localhost:3000/api/musics?id_music=1429841"
+    "https://spotifiy-imersao-dev.vercel.app//api/musics?id_music=1429841"
   );
 
   dadosMusic = await respostaMusic.json();
