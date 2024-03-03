@@ -39,5 +39,5 @@ app.get("/api/musics", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on https://spotifiy-imersao-dev.vercel.app/`);
 });
