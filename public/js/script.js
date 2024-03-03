@@ -170,8 +170,6 @@ async function requestApi(searchTerm) {
     btnCantor.addEventListener("click", () => {
       console.log(duracaoMusica);
 
-      console.log(gridContainer);
-
       musicTimer.innerText = Math.trunc(audio.duration);
 
       if (audioAtual && !audioAtual.paused) {
