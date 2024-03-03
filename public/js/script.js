@@ -41,6 +41,7 @@ let novoGridContainer;
 let nameSong, previewSong, coverSong, duration;
 
 async function requestApi(searchTerm) {
+  searchTerm = searchTerm.replace(/%20/g, "-");
   const resposta = await fetch(
     "https://spotifiy-imersao-dev.vercel.app//api/artist?test=" + searchTerm
   );
