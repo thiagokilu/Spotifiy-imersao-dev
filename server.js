@@ -8,7 +8,7 @@ const PORT = 3000;
 
 app.use(
   cors({
-    origin: "http://localhost:3000/",
+    origin: "https://spotifiy-imersao-dev.vercel.app/",
   })
 );
 app.engine("html", require("ejs").renderFile);
@@ -39,5 +39,5 @@ app.get("/api/musics", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:3000/`);
+  console.log(`Server is running on https://spotifiy-imersao-dev.vercel.app/`);
 });

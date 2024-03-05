@@ -43,7 +43,7 @@ async function requestApi(searchTerm) {
   const searchTermFormatted = searchTerm.replace(/\s+/g, '-');
 
   const resposta = await fetch(
-    "http://localhost:3000/api/artist/test?test=" + searchTerm 
+    "https://spotifiy-imersao-dev.vercel.app//api/artist?test=" + searchTerm 
   );
   dados = await resposta.json();
   console.log(dados)
@@ -57,7 +57,7 @@ async function requestApi(searchTerm) {
   console.log(dados["id"]);
 
   const respostaMusic = await fetch(
-    `http://localhost:3000/api/musics?id_music=${artistId}`
+    `https://spotifiy-imersao-dev.vercel.app//api/musics?id_music=${artistId}`
   );
 
   dadosMusic = await respostaMusic.json();
