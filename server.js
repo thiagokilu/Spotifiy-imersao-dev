@@ -8,7 +8,7 @@ const PORT = 3000;
 
 app.use(
   cors({
-    origin: "https://spotifiy-imersao-dev.vercel.app",
+    origin: "http://localhost:3000/",
   })
 );
 app.engine("html", require("ejs").renderFile);
@@ -20,9 +20,9 @@ app.set("views", path.join(__dirname, "./views"));
 app.get("/", (req, res) => {
   res.render("index");
 });
-app.get("/api/artist", async (req, res) => {
+app.get("/api/artist/test", async (req, res) => {
   const response = await fetch(
-    "https://api.deezer.com/artist/" + req.query.test
+    "https://api.deezer.com/search?q=" + req.query.test
   );
 
   const data = await response.json();
@@ -39,5 +39,5 @@ app.get("/api/musics", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on https://spotifiy-imersao-dev.vercel.app/`);
+  console.log(`Server is running on http://localhost:3000/`);
 });

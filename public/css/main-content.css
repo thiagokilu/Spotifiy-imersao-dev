@@ -447,3 +447,18 @@
   #result-music {
     padding: 20px 40px;
   }
+
+  /* SCROLL */
+  .offer__scroll-container-results {
+    max-height: 63vh;
+    margin: 24px;
+    overflow-y: auto;
+  }
+  
+  .offer__scroll-container-results::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  .offer__scroll-container-results::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
