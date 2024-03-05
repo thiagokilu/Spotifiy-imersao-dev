@@ -43,7 +43,7 @@ async function requestApi(searchTerm) {
   const searchTermFormatted = searchTerm.replace(/\s+/g, '-');
 
   const resposta = await fetch(
-    "https://spotifiy-imersao-dev.vercel.app/api/artist?test=" + searchTerm 
+    "https://spotifiy-imersao-dev.vercel.app/api/artist/test?test=" + searchTerm
   );
   dados = await resposta.json();
   console.log(dados)
