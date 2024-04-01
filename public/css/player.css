@@ -3,9 +3,8 @@
     display: flex;
     align-items: center;
     color: #fff;
-    background-color: #121212;
+    background-color: black;
     justify-content: space-between;
-    padding: 15px 40px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -22,6 +21,8 @@
     align-items: center;
     width: 25%;
     height: 25%;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 .music-info p{
     text-align: left;
@@ -33,7 +34,8 @@
 }
 
 .player img {
-    width: 50px;
+    width: 60px;
+    border-radius: 5px;
 }
 
 
@@ -42,6 +44,7 @@
     flex-direction: column;
     text-align: center;
     margin-right: 25%;
+    margin-bottom: 10px;
 }
 
 .music-player img {
@@ -68,6 +71,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 30px;
  }
 
  .volume-icon{
@@ -75,11 +80,16 @@
  }
 
 input[type="range"] {
-    color: #fff;
     width: 100px;
     height: 5px;
     margin-left: 10px;
+    accent-color: #fff;
+    border: none !important; /* Remove a borda */
+    outline: none; /* Remove a borda de foco (caso deseje) */
+  
  }
 
-
+ input[type="range"]:hover{
+    accent-color: #1dba54;
+ }
 

@@ -1,0 +1,38 @@
+.menu-mobile {
+    font-size: 20px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    display: none;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.3); /* Cor preta com 50% de transparência */
+}
+
+.menu-mobile a {
+    color: #fff;
+    display: block; /* Faz com que os itens do menu se comportem como blocos */
+    text-align: center; /* Centraliza o texto horizontalmente */ /* Adiciona um espaço entre os itens do menu */
+    margin-right: 40px;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+
+.menu-mobile .menu__item {
+    display: flex;
+    flex-direction: column;
+}
+.menu-mobile .menu__item .menu__title {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 760px) {
+    .menu-mobile{
+        display: flex;
+    }
+}

@@ -10,8 +10,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    width: 81vw;
+    padding-top: 16px;
+    padding-bottom: 16px;
     margin: 10px;
+    margin-top: 8px;
     border-radius: 8px;
     background-color: #121212;
 }
@@ -42,6 +45,7 @@
 .header__login{
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
 
 .header__search{
@@ -98,7 +102,9 @@
 
   /* PLAYLIST */
   .playlist-container {
-    height: 68vh;
+    height: 40vw;
+    width: 81vw;
+    overflow: hidden;
     padding-top: 16px;
     margin: 10px;
     border-radius: 10px;
@@ -124,7 +130,7 @@
   
   /* SCROLL */
   .offer__scroll-container {
-    max-height: 43vh;
+    max-height: 30vw;
     margin: 24px;
     overflow-y: auto;
   }
@@ -457,7 +463,7 @@
 
   /* SCROLL */
   .offer__scroll-container-results {
-    max-height: 63vh;
+    max-height: 55vw;
     margin: 24px;
     overflow-y: auto;
   }

@@ -1,0 +1,131 @@
+@media screen and (max-width: 760px) {
+    .sidebar{
+        display: none;
+    }
+
+    .main-container{
+    max-width: 100vw; 
+    height: 100vw; 
+    margin: 0;
+    }
+
+    .hidden-mobile{
+        display: none;
+    }
+
+
+    .header__navigation{
+        max-width: 90vw;
+        width: 90vw;
+        padding: 10px;
+    }
+
+    .header__navigation .navigation {
+        display: none;
+    }
+
+    .header__navigation .header__login {
+        display: none;
+    }
+
+    .offer__scroll-container {
+        overflow-y: auto;
+    }
+
+    .offer__list-item {
+        grid-template-columns: 1fr 1fr;
+    }
+    .playlist-container {
+        height: 100vh;
+        padding-top: 16px;
+        margin: 0; 
+        overflow: auto;
+        width: 100vw;
+    }
+
+    .cards {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 8px;
+    }
+
+    .offer__scroll-container {
+        max-height: calc(100vh - 16px); /* Ajustar altura máxima do scroll container */
+        margin: 5px;
+        display: block;
+    }
+
+    .offer__scroll-container-results{
+        min-height: 100vh;
+        width: 100vw;
+        padding-top: 16px;
+        margin: 0; 
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    .grid-container{
+        grid-template-columns: repeat(2, 50vw); /* Define duas colunas com 50% da largura da tela cada */
+    width: 100vw; /* Garante que o container de grid não ultrapasse a largura da tela */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimentos */
+    }
+
+    .artist-card{
+        width: 30vw;
+    }
+
+    .music-card{
+        width: 30vw;
+        
+    }
+
+    #result-artist {
+        padding: 0;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    #result-music{
+        padding: 0;
+        margin-left: 20px;
+        overflow-x: hidden;
+    }
+
+    .player{
+        font-size: 15px;
+        padding: 0;
+        padding-top: 10px;
+        position: fixed; /* ou absolute, dependendo do layout */
+        z-index: 9999; /* Define um valor alto para garantir que o player de música fique acima do menu */
+        bottom: 70px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .music-info {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 250px;
+    height: 25%;
+    }
+    .player img {
+        width: 50px;
+    }
+
+    .music-player{
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .volume-container {
+        display: none;
+    }
+
+
+
+    .footer{
+        display: none;
+    }
+    
+}
